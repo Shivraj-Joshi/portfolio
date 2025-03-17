@@ -35,7 +35,7 @@ const Contact = () => {
               className="outline-none bg-[#1a1a1a] p-2 rounded border border-[#3d3d3d] text-white "
             ></textarea>
           </form>
-          <button className="bg-white p-2 rounded cursor-pointer hover:bg-[#1a1a1a] hover:text-white md:w-[400px] hover:border hover:border-[#3d3d3d] font-semibold ">
+          <button className="bg-white p-2 rounded cursor-pointer hover:bg-[#1a1a1a] hover:text-white md:w-[400px] hover:border hover:border-[#3d3d3d] transition-all duration-300 font-semibold ">
             Send <i className="ri-mail-send-fill"></i>
           </button>
         </div>

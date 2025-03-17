@@ -65,8 +65,12 @@ const Navbar = () => {
           </button>
         </div>
         <div className="menu sm:hidden ">
-          <button className="bg-[#fffffff0d] border text-white cursor-pointer hover:bg-white hover:text-black  rounded p-2">
-            <i className="ri-menu-line"></i>
+          <button
+            className={`bg-[#fffffff0d] border ${
+              scroll ? "text-black" : "text-white"
+            } cursor-pointer hover:bg-white hover:text-black  rounded p-2 px-3`}
+          >
+            <i className="ri-menu-line text-[20px]"></i>
           </button>
         </div>
       </div>

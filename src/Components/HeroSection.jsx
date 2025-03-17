@@ -4,7 +4,7 @@ import resume from "../assets/resume.pdf";
 const HeroSection = () => {
   return (
     <div className="main-container md:flex ">
-      <div className="left-container bg-[#010101] h-screen md:w-[62%] flex items-center ">
+      <div className="left-container bg-[#010101] md:h-screen md:w-[62%] flex items-center ">
         <div className="text bg-trsansparent h-[400px]  flex flex-col items-center justify-center  ">
           <div className="title">
             <h2 className="text-white text-[80px] md:ml-[100px]  ">
@@ -51,7 +51,7 @@ const HeroSection = () => {
           </a>
         </div>
       </div>
-      <div className="right-container bg-[#99ff00] h-screen w-[38%]"></div>
+      <div className="right-container bg-[#99ff00] md:h-screen md:w-[38%]"></div>
     </div>
   );
 };
