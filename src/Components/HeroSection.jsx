@@ -45,7 +45,7 @@ const HeroSection = () => {
           <a
             href={resume}
             download="resume.pdf"
-            className="bg-[#ffffff0d] p-2 rounded cursor-pointer text-white hover:bg-white hover:text-black border border-[#3d3d3d]"
+            className="bg-[#ffffff0d] p-2 rounded cursor-pointer text-white hover:bg-white hover:text-black border border-[#3d3d3d] transition-all duration-300"
           >
             Download Resume <i className="ri-download-fill"></i>
           </a>
