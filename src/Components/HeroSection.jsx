@@ -1,11 +1,20 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import resume from "../assets/resume.pdf";
+import image from "../assets/profile.png";
 const HeroSection = () => {
   return (
-    <div className="main-container md:flex ">
+    <div className="main-container md:flex relative">
+      <div className="image absolute bottom-0 right-[50px] md:bottom-5 md:right-[220px]">
+        <img
+          src={image}
+          alt="profile image"
+          className=" h-[400px] md:h-[550px] rounded-b-[50%] object-cover "
+        />
+      </div>
+      {/* left container */}
       <div className="left-container bg-[#010101] md:h-screen md:w-[62%] flex items-center ">
-        <div className="text bg-trsansparent h-[400px]  flex flex-col items-center justify-center  ">
+        <div className="text bg-trsansparent h-[500px]  flex flex-col items-center justify-center  ">
           <div className="title">
             <h2 className="text-white text-[80px] md:ml-[100px]  ">
               I'm Shivraj
@@ -51,7 +60,8 @@ const HeroSection = () => {
           </a>
         </div>
       </div>
-      <div className="right-container bg-[#99ff00] md:h-screen md:w-[38%]"></div>
+      {/* right container */}
+      <div className="right-container bg-[#99ff00] h-[350px] md:h-screen md:w-[38%]"></div>
     </div>
   );
 };
