@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="bg-black flex justify-center ">
       <div className="text-white p-4 border-t border-gray-400">
         {" "}
-        © 2025 all right reserved by Shivrj Joshi
+        © 2025 all right reserved by Shivraj Joshi
       </div>
     </div>
   );
