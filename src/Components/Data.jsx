@@ -17,8 +17,8 @@ export const ProjectData = [
     title: "Wee Chat",
     description: "this is an real time chat website ",
     image: image3,
-    github: "https://github.com/Shivraj-Joshi/portfolio",
-    live: "https://style-club-eight.vercel.app/",
+    github: "https://github.com/Shivraj-Joshi/WeeChat",
+    live: "",
     tech: ["React", "Sass Css", "firebase"],
   },
   {

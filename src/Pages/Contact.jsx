@@ -7,7 +7,7 @@ const Contact = () => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "f40bc0ca-5f01-4896-b4c7-b9cb8c3c3e9b");
+    formData.append("access_key", import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
@@ -93,7 +93,7 @@ const Contact = () => {
             <div className="address flex items-center gap-4">
               <i className="ri-map-pin-fill bg-[#1a1a1a] text-white p-3 rounded border border-[#3d3d3d] "></i>{" "}
               <p className="text-white">
-                address <br /> <span>sector-29,faridabad,haryana</span>
+                Address <br /> <span>sector-29,faridabad,haryana</span>
               </p>
             </div>
           </div>

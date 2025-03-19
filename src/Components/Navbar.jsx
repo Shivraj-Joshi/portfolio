@@ -61,7 +61,7 @@ const Navbar = () => {
               scroll ? "hover:border hover:border-[black]" : ""
             }`}
           >
-            <span className=""> let's connect</span>{" "}
+            <span className=""> Let's Connect</span>{" "}
             <i className="ri-arrow-right-line" />
           </button>
         </div>
