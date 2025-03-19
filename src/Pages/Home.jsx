@@ -1,20 +1,18 @@
 import React from "react";
-import Navbar from "../Components/Navbar";
 import HeroSection from "../Components/HeroSection";
-import Footer from "../Components/Footer";
 import Contact from "./Contact";
 import Skills from "./Skills";
 import Projects from "./Projects";
+import About from "./About";
 
 const Home = () => {
   return (
     <div>
-      {/* <Navbar /> */}
       <HeroSection />
+      <About />
       <Skills />
       <Projects />
       <Contact />
-      {/* <Footer /> */}
     </div>
   );
 };
