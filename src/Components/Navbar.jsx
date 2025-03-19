@@ -3,6 +3,7 @@ import image from "../assets/logo.png";
 import { Link } from "react-router-dom";
 const Navbar = () => {
   const [scroll, setScroll] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -64,15 +65,61 @@ const Navbar = () => {
             <i className="ri-arrow-right-line" />
           </button>
         </div>
+
+        {/* menu for small screens */}
+
         <div className="menu sm:hidden ">
           <button
+            onClick={() => setIsOpen(!isOpen)}
             className={`bg-[#fffffff0d] border ${
               scroll ? "text-black" : "text-white"
             } cursor-pointer hover:bg-white hover:text-black  rounded p-2 px-3`}
           >
-            <i className="ri-menu-line text-[20px]"></i>
+            {isOpen ? (
+              <i className="ri-close-large-line text-[20px]"></i>
+            ) : (
+              <i className="ri-menu-line text-[20px]"></i>
+            )}
           </button>
         </div>
+
+        {/* links for small screens */}
+
+        {isOpen ? (
+          <ul
+            className={`md:hidden space-y-2 absolute top-[99%] left-0 w-full bg-[#fff] text-black bg-opacity-80  transition-transform duration-300 ${
+              isOpen ? "block" : "hidden"
+            }`}
+          >
+            <li className="flex items-center justify-center py-2">
+              <Link to="/" className="nav-link">
+                Home
+              </Link>
+            </li>
+            <li className="flex items-center justify-center py-2">
+              <Link to="/about" className="nav-link">
+                About
+              </Link>
+            </li>
+            <li className="flex items-center justify-center py-2">
+              <Link to="/skills" className="nav-link">
+                Skills
+              </Link>
+            </li>
+            <li className="flex items-center justify-center py-2">
+              <Link to="/projects" className="nav-link">
+                Projects
+              </Link>
+            </li>
+            <li className="flex items-center justify-center py-2">
+              <Link to="/contact" className="nav-link">
+                Contact
+              </Link>
+            </li>
+          </ul>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );
