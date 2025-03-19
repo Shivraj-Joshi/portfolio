@@ -91,28 +91,48 @@ const Navbar = () => {
               isOpen ? "block" : "hidden"
             }`}
           >
-            <li className="flex items-center justify-center py-2">
-              <Link to="/" className="nav-link">
+            <li className="flex items-center justify-center font-semibold py-2">
+              <Link
+                to="/"
+                onClick={() => setIsOpen(!isOpen)}
+                className="nav-link"
+              >
                 Home
               </Link>
             </li>
-            <li className="flex items-center justify-center py-2">
-              <Link to="/about" className="nav-link">
+            <li className="flex items-center justify-center font-semibold py-2">
+              <Link
+                to="/about"
+                onClick={() => setIsOpen(!isOpen)}
+                className="nav-link"
+              >
                 About
               </Link>
             </li>
-            <li className="flex items-center justify-center py-2">
-              <Link to="/skills" className="nav-link">
+            <li className="flex items-center justify-center font-semibold py-2">
+              <Link
+                to="/skills"
+                onClick={() => setIsOpen(!isOpen)}
+                className="nav-link"
+              >
                 Skills
               </Link>
             </li>
-            <li className="flex items-center justify-center py-2">
-              <Link to="/projects" className="nav-link">
+            <li className="flex items-center justify-center font-semibold py-2">
+              <Link
+                to="/projects"
+                onClick={() => setIsOpen(!isOpen)}
+                className="nav-link"
+              >
                 Projects
               </Link>
             </li>
-            <li className="flex items-center justify-center py-2">
-              <Link to="/contact" className="nav-link">
+            <li className="flex items-center justify-center font-semibold py-2">
+              <Link
+                to="/contact"
+                onClick={() => setIsOpen(!isOpen)}
+                className="nav-link"
+              >
                 Contact
               </Link>
             </li>
