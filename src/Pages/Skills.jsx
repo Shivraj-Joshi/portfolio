@@ -19,7 +19,7 @@ const Skills = () => {
         <h1 className="text-white uppercase text-center text-[35px] font-semibold">
           Skills
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 align-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 align-center">
           <div className="container bg-[#0e0e0e] md:h-[200px] md:w-[500px] text-white  rounded-xl border border-[#3d3d3d] p-2 ">
             <h2 className="text-center">Languages</h2>
             <div className=" flex items-center justify-center gap-10 md:gap-18 mt-5 ">

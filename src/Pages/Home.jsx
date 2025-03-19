@@ -9,7 +9,7 @@ import Projects from "./Projects";
 const Home = () => {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <HeroSection />
       <Skills />
       <Projects />
