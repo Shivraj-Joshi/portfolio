@@ -1,7 +1,7 @@
 import React from "react";
 import image from "../assets/ecom.png";
 import image2 from "../assets/portfolio.png";
-import image3 from "../assets/weechat.png";
+import image3 from "../assets/chatbot.png";
 export const ProjectData = [
   {
     id: 1,
@@ -14,12 +14,12 @@ export const ProjectData = [
   },
   {
     id: 2,
-    title: "Wee Chat",
-    description: "this is an real time chat website ",
+    title: "AssistGPT",
+    description: "AI Chatbot Using Google Gemini API ",
     image: image3,
-    github: "https://github.com/Shivraj-Joshi/WeeChat",
-    live: "",
-    tech: ["React", "Sass Css", "firebase"],
+    github: "https://github.com/Shivraj-Joshi/chatbot",
+    live: "https://chatbot-drab-alpha.vercel.app/",
+    tech: ["React", "Tailwind CSS", "Google Gemini API"],
   },
   {
     id: 3,
