@@ -26,8 +26,8 @@ export const ProjectData = [
     title: "Portfolio",
     description: "this is an Portfolio website ",
     image: image2,
-    github: "https://github.com/Shivraj-Joshi/portfollio",
-    live: "https://style-club-eight.vercel.app/",
+    github: "https://github.com/Shivraj-Joshi/portfolio",
+    live: "https://portfolio-shivraj-joshis-projects.vercel.app/",
     tech: ["React", "Tailwind Css"],
   },
 ];

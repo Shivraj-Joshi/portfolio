@@ -40,7 +40,7 @@ const Skills = () => {
           <h2 className="text-center">Developer Tools</h2>
           <div className=" flex items-center justify-center gap-10 md:gap-12 mt-5 ">
             <FaGitAlt className="text-[70px]" />
-            <FaGithub className="text-[70px] hover:animate-bounce" />
+            <FaGithub className="text-[70px] animate-bounce" />
             <VscVscode className="text-[70px] hover:animate-ping" />
             <IoLogoFirebase className="text-[70px] hover:animate-pulse" />
           </div>
